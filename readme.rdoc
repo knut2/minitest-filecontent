@@ -1,0 +1,24 @@
+=MiniTest-Filecontent
+
+Compare expected result with content of a file.
+
+Usefull, if you compare long strings or generated texts in your tests.
+
+See MiniTest::Test for details.
+
+
+=Related Gems
+
+==Minitest
+MiniTest-Filecontent is a extension of Minitest
+
+* https://rubygems.org/gems/minitest
+
+
+
+==Minitest::Filesystem
+Check content of a filesystem.
+This gem checks the existence of files and directory structures.
+There is no check and comparison of the content of files.
+
+* https://rubygems.org/gems/minitest-filesystem

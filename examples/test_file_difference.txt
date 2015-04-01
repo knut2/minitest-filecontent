@@ -1,0 +1,3 @@
+Some text to be tested.
+More text.
+and some other text
