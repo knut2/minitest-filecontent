@@ -72,7 +72,7 @@ end
 #~ desc "Gem minitest-filecontent"
 task :default => :check
 task :default => :test
-task :default => :gem
+#~ task :default => :gem
 #~ task :default => :install
 #~ task :default => :rdoc_local
 #~ task :default => :links
