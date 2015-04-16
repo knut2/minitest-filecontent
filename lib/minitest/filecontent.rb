@@ -26,7 +26,7 @@ require 'date'  #needed for Ruby 1.9 (class Date no standard?)
 #
 module MiniTest
   module Filecontent
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
   end
   
 =begin rdoc

@@ -22,3 +22,9 @@ This gem checks the existence of files and directory structures.
 There is no check and comparison of the content of files.
 
 * https://rubygems.org/gems/minitest-filesystem
+
+=Versions
+==0.1.0 2015-04-16 
+Initial version
+
+==0.1.1 

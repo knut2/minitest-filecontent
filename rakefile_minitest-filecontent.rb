@@ -9,7 +9,8 @@ require 'knut-gempackager'
 require '../knut_pw.rb'
 $:.unshift('lib')
 require 'minitest/filecontent'
-$minitest_filecontent_version = "0.1.0"
+$minitest_filecontent_version = "0.1.1.beta"
+MiniTest::Filecontent::VERSION = $minitest_filecontent_version  #during developing
 
 #http://docs.rubygems.org/read/chapter/20
 gem_minitest_filecontent = Knut::Gem_packer.new('minitest-filecontent', $minitest_filecontent_version){ |gemdef, s|
