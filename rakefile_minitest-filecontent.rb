@@ -46,13 +46,14 @@ DESCR
     readme.rdoc
   }
   
+  s.add_dependency('minitest','>= 0') #tested with "5.5.1" (rb1.9.3 + rb 2.1.5)
   #~ s.add_dependency('') 
   #~ s.add_dependency('log4r')
   
   #~ s.add_development_dependency()
   #~ s.requirements << ''
 
-  #~ gemdef.public = true
+  gemdef.public = true
   #~ gemdef.add_ftp_connection('ftp.rubypla.net', Knut::FTP_RUBYPLANET_USER, Knut::FTP_RUBYPLANET_PW, "/Ruby/gemdocs/minitest-filecontent/#{$minitest_filecontent_version}")
 
   gemdef.define_test( 'unittest', FileList['test*.rb'])
@@ -70,7 +71,7 @@ task :rdoc_local do
   `#{cmd.join(' ')}`
 end
 #~ desc "Gem minitest-filecontent"
-task :default => :check
+#~ task :default => :check
 task :default => :test
 #~ task :default => :gem
 #~ task :default => :install
