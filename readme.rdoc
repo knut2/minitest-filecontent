@@ -6,6 +6,20 @@ Usefull, if you compare long strings or generated texts in your tests.
 
 See MiniTest::Test for details.
 
+==Example
+
+    require 'minitest/filecontent'
+    class TestExample < MiniTest::Test
+      def test_file
+        assert_equal_filecontent("expected/#{__method__}.txt", MyClass.function)
+      end
+    end
+
+Tests first if the file "expected/test_file.txt" exists ("expected/#{__method__}.txt").
+Then the content of the file is compared to the result of MyClass.function.
+
+If there is a difference the test fails and writes the real result into a 'failure'-folder.
+Now you can your favorite diff-viewer to check the differences.
 
 =Related Gems
 
